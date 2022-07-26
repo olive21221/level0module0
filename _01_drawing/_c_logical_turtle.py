@@ -13,15 +13,17 @@ def screen_clicked(x, y):
     print('You pressed: x=' + str(x) + ', y=' + str(y))
     
     # 6. Call the turtle .penup() method
-    
+    Oliver.penup()
     # 7. Move the turtle to a new location using .goto(x, y)
-
+    Oliver.goto(x,y)
 
 def turtle_clicked(x, y):
     print('turtle clicked!')
     
     # 8. Make a for loop to run the next instructions 3 times
-        
+    for i in range (3):
+        Oliver.right(360)
+        Oliver.color(get_random_color())
         # 9. Make the turtle spin 360 degrees using the .right() method
         
         # 10. Use the .color() method and getRandomColor() function to change

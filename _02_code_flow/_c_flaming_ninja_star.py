@@ -21,42 +21,42 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    
+    oliver=turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    oliver.shape('turtle')
     # Set the turtle width to 2
-    
+    oliver.width(2)
     # Set the turtle speed to 0 (fastest)
-    
+    oliver.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
-        
+    for i in range (25):
         # Set the turtle .fillcolor() to orange
-        
+        oliver.fillcolor('orange')
         # Call the turtle .begin_fill() function
-        
+        oliver.begin_fill()
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
         #                will turn a full circle)
-        
+        oliver.right(45)
         # DRAW           Move the turtle 64 pixels
-        
+        oliver.forward(64)
         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative
         #                numbers will turn the turtle counter-clockwise.)
-        
+        oliver.left(40)
         # DRAW FLAME     Move the turtle the distance in the variable flameSize
-        
+        oliver.forward(flameSize)
         #                Turn the turtle to the right 170 degrees
-         
+        oliver.right(170)
         #                Move the turtle the distance in the variable flameSize (again)
-         
+        oliver.forward(flameSize)
         #  TURN RIGHT    Turn the turtle 62 degrees to the right
-        
+        oliver.right(62)
         #  DRAW          Move the turtle the distance in the variable baseSize
-        
+        oliver.forward(baseSize)
         # Call the turtle .end_fill() method
-        
+        oliver.end_fill()
     # Hide your turtle so you can see the pattern.
-        
+    oliver.hideturtle()
     # TEST   Run the program. Check that your shape is the same as the first
     #        picture in the recipe. This is one arm of the ninja star.
 

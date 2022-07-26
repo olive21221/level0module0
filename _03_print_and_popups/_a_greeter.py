@@ -4,18 +4,18 @@ from tkinter import messagebox, simpledialog, Tk
 if __name__ == '__main__':
     
     # Make a new window variable, window = Tk()
-    
+    window=Tk()
     # Hide the window using the window's .withdraw() method
-    
+    window.withdraw()
     # Ask the user for their name and save it to a variable
     # name = simpledialog.askstring(title='Greeter', prompt="What is your name?")
-    
+    oliver=simpledialog.askstring(title='Greeter', prompt="What is your name?")
     # Show a message box with your message using the .showinfo() method
-    
+    messagebox.showinfo('title',oliver)
     # Print your message to the console using the print() function
-    
+    print(oliver)
     # Show an error message using messagebox.showerror()
-
+    messagebox.showerror('error')
     # Run the window's .mainloop() method
-
+    window.mainloop()
     pass
